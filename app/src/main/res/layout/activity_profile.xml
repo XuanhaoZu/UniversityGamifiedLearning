@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eff7f6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="135dp"
+        android:background="@drawable/sky"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/sky" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvZid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvZid"
+        app:layout_constraintStart_toStartOf="@+id/tvZid"
+        app:layout_constraintTop_toBottomOf="@+id/tvZid" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/ivR10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivR5"
+        app:layout_constraintEnd_toEndOf="@+id/ivR2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivR2"
+        app:layout_constraintTop_toTopOf="@+id/ivR5"
+        app:srcCompat="@drawable/m10"
+        tools:srcCompat="@drawable/m10" />
+
+    <ImageView
+        android:id="@+id/ivR5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/ivR1"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/ivR1"
+        app:layout_constraintTop_toBottomOf="@+id/ivR1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/m5"
+        tools:srcCompat="@drawable/m5" />
+
+    <TextView
+        android:id="@+id/tvMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="My medal"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <ImageView
+        android:id="@+id/ivR1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedal"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/m1"
+        tools:srcCompat="@drawable/m1" />
+
+    <ImageView
+        android:id="@+id/ivR2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivR1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivR1"
+        app:layout_constraintTop_toTopOf="@+id/ivR1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/m2"
+        tools:srcCompat="@drawable/m2" />
+
+    <ImageView
+        android:id="@+id/ivR3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivR2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivR2"
+        app:layout_constraintTop_toTopOf="@+id/ivR2"
+        app:srcCompat="@drawable/m3"
+        tools:srcCompat="@drawable/m3" />
+
+    <ImageView
+        android:id="@+id/ivR20"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivR10"
+        app:layout_constraintEnd_toEndOf="@+id/ivR3"
+        app:layout_constraintStart_toStartOf="@+id/ivR3"
+        app:layout_constraintTop_toTopOf="@+id/ivR10"
+        app:srcCompat="@drawable/m20"
+        tools:srcCompat="@drawable/m20" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="252dp"
+        android:text="BMI calculator"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedal" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter height(cm)"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Enter weight(kg)"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etHeight"
+        app:layout_constraintTop_toTopOf="@+id/etHeight" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHeight"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
